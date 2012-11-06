@@ -1,0 +1,11 @@
+使い方
+ * To run: bin/hadoop jar build/hadoop-examples.jar sort
+ *            [-m <i>maps</i>] [-r <i>reduces</i>]
+ *            [-inFormat <i>input format class</i>] 
+ *            [-outFormat <i>output format class</i>] 
+ *            [-outKey <i>output key class</i>] 
+ *            [-outValue <i>output value class</i>] 
+ *            [-totalOrder <i>pcnt</i> <i>num samples</i> <i>max splits</i>]
+ *            <i>in-dir</i> <i>out-dir</i>
+テキストファイルを読み込ませたい場合は-textをつける。以下が例
+hadoop jar ~/Sort.jar org.apache.hadoop.examples.Sort -text ${input} ${output}
